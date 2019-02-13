@@ -32,12 +32,6 @@ public class TestClass {
 		
 		System.out.println("Vida media Gato: " + Gato.getVidaMedia());
 		
-		
-		
-		
-		
-		
-
 	}
 
 }
