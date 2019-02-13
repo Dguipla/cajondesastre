@@ -2,6 +2,7 @@ package com.pgrsoft.cajondesastre.herencia1;
 
 public class TestClass {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// Ejemplo1
