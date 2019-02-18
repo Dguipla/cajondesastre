@@ -25,16 +25,7 @@ public class TestClass {
 		String strNumero2 = "" + numero2;
 		
 		strNumero2 = String.valueOf(numero2);
-		
-		//
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 		
 	}
