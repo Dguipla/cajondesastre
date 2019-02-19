@@ -13,7 +13,6 @@ public class Producto {
 	}
 	
 	public Producto(int codigo, String nombre, double precio, boolean descatalogado, Familia familia) {
-		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.precio = precio;
