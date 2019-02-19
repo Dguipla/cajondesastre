@@ -69,9 +69,34 @@ public class ProductoServicesImpl implements ProductoServices {
 
 	@Override
 	public Map<String, Double> getStatistics() {
+		
 		Map<String,Double> statistics = new HashMap<>();
 		
-		// TODO PENDIENTE DE IMPLEMENTAR
+		double max = 0.0;
+		double min = 999999999.0;
+		double acumulado = 0.0;
+		
+		for (Producto producto: dummyDB.getProducts().values()){
+			
+			if (producto.getPrecio() > max) {
+				max = producto.getPrecio();
+			}
+			
+			if (producto.getPrecio() < min) {
+				System.out.println(producto.getPrecio() + ": " + min);
+				min = producto.getPrecio();
+			}
+			
+			acumulado += producto.getPrecio();
+		}
+		
+		double numeroProductos = dummyDB.getProducts().size();
+		double media = acumulado / numeroProductos;
+		
+		statistics.put("max", max);
+		statistics.put("min", min);
+		statistics.put("media", media);
+		statistics.put("cantidad", numeroProductos);
 		
 		return statistics;
 	}
