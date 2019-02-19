@@ -31,10 +31,26 @@ public class ProductoServicesImpl implements ProductoServices {
 		dummyDB.getProducts().remove(codigo);
 	}
 
+/*	
+	@Override
+	public List<Producto> getAll() {
+		
+		Map<Integer,Producto> map = dummyDB.getProducts();
+		
+		Collection<Producto> productsCollection = map.values();
+		
+		List<Producto> productos = new ArrayList<>();
+		
+		productos.addAll(productsCollection);
+		
+		return productos;
+	}
+*/
 	@Override
 	public List<Producto> getAll() {
 		return new ArrayList<Producto>(dummyDB.getProducts().values());
 	}
+	
 
 	@Override
 	public List<Producto> getDescatalogados() {
@@ -83,7 +99,6 @@ public class ProductoServicesImpl implements ProductoServices {
 			}
 			
 			if (producto.getPrecio() < min) {
-				System.out.println(producto.getPrecio() + ": " + min);
 				min = producto.getPrecio();
 			}
 			

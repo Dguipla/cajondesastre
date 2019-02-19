@@ -53,7 +53,7 @@ public class TestClass {
 		System.out.println("producto #36 antes de update: " + producto);
 		producto.setNombre("NUEVO NOMBRE");
 		producto.setDescatalogado(false);
-		producto.setPrecio(0.0);
+		producto.setPrecio(100.0);
 		productoServices.update(producto);
 		producto = null;
 		producto = productoServices.read(36);
