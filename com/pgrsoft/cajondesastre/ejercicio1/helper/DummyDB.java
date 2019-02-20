@@ -1,7 +1,10 @@
-package com.pgrsoft.cajondesastre.ejercicio1;
+package com.pgrsoft.cajondesastre.ejercicio1.helper;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import com.pgrsoft.cajondesastre.ejercicio1.model.Familia;
+import com.pgrsoft.cajondesastre.ejercicio1.model.Producto;
 
 public class DummyDB {
 

@@ -1,7 +1,10 @@
-package com.pgrsoft.cajondesastre.ejercicio1;
+package com.pgrsoft.cajondesastre.ejercicio1.services;
 
 import java.util.List;
 import java.util.Map;
+
+import com.pgrsoft.cajondesastre.ejercicio1.model.Familia;
+import com.pgrsoft.cajondesastre.ejercicio1.model.Producto;
 
 public interface ProductoServices {
 

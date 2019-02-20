@@ -1,7 +1,12 @@
-package com.pgrsoft.cajondesastre.ejercicio1;
+package com.pgrsoft.cajondesastre.ejercicio1.testclass;
 
 import java.util.List;
 import java.util.Map;
+
+import com.pgrsoft.cajondesastre.ejercicio1.model.Familia;
+import com.pgrsoft.cajondesastre.ejercicio1.model.Producto;
+import com.pgrsoft.cajondesastre.ejercicio1.services.ProductoServices;
+import com.pgrsoft.cajondesastre.ejercicio1.services.impl.ProductoServicesImpl;
 
 public class TestClass {
 

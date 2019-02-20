@@ -1,10 +1,15 @@
-package com.pgrsoft.cajondesastre.ejercicio1;
+package com.pgrsoft.cajondesastre.ejercicio1.services.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.pgrsoft.cajondesastre.ejercicio1.helper.DummyDB;
+import com.pgrsoft.cajondesastre.ejercicio1.model.Familia;
+import com.pgrsoft.cajondesastre.ejercicio1.model.Producto;
+import com.pgrsoft.cajondesastre.ejercicio1.services.ProductoServices;
 
 public class ProductoServicesImpl implements ProductoServices {
 
